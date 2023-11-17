@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+<variable
+    name="tital"
+    type="String" />
+        <variable
+            name="name"
+            type="String" />
+        <variable
+            name="airdate"
+            type="String" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_tv_show"
+        android:orientation="vertical"
+        android:padding="8dp"
+        
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{tital}"
+            android:textSize="13sp"
+            android:textColor="@color/ColorTextIcon"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@{name}"
+            android:textSize="12sp"
+            android:textColor="@color/ColorTextIcon"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@{airdate}"
+            android:textSize="11sp"
+            android:textColor="@color/ColorTextIcon"
+            />
+
+    </LinearLayout>
+</layout>
